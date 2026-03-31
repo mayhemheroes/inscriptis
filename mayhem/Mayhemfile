@@ -1,0 +1,6 @@
+project: inscriptis
+target: inscriptis_fuzz
+
+cmds:
+    - cmd: /inscriptis/fuzz/inscriptis_fuzz.py
+      libfuzzer: true

@@ -1,4 +1,5 @@
-FROM python:3.8-bullseye
+FROM python:3.11-bullseye
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y clang
 RUN pip3 install atheris
 
 COPY . /inscriptis
